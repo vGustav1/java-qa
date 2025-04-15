@@ -28,6 +28,7 @@ public class User implements Serializable, UserDetails {
     @Column(name = "nome", nullable = false)
     private String nome;
 
+    @Getter
     @Column(name = "email", unique = true)
     private String email;
 
@@ -64,12 +65,7 @@ public class User implements Serializable, UserDetails {
     public String getUsername() {
         return this.nome;
     }
-
-
-    public String getEmail() {
-        return this.email;
-    }
-    // metodo return this.email criado
+    
 
     @Override
     public boolean isAccountNonExpired() {
