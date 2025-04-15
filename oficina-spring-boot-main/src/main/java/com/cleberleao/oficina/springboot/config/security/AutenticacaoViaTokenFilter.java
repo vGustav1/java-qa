@@ -24,7 +24,9 @@ import java.util.Collection;
  */
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class AutenticacaoViaTokenFilter extends OncePerRequestFilter {
+
 	@Autowired
 	private TokenService tokenService;
 	@Autowired

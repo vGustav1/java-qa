@@ -59,10 +59,18 @@ public class User implements Serializable, UserDetails {
     public String getPassword() {
         return this.password;
     }
+
     @Override
     public String getUsername() {
+        return this.nome;
+    }
+
+
+    public String getEmail() {
         return this.email;
     }
+    // metodo return this.email criado
+
     @Override
     public boolean isAccountNonExpired() {
         return true;
